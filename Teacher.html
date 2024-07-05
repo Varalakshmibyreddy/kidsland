@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+        }
+        .header{
+            height: 300px;
+            width: 100%;
+            background-color: gainsboro;
+            text-align: center;
+        }
+        .header h2{
+            font-size: 50px;
+            padding-top: 80px;
+        }
+        .header a{
+            text-decoration: none;
+            margin: 5px;
+            color: blue;
+        }
+        .teacher{
+            height: 1200px;
+            width: 100%;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+        .teacher h3{
+            font-size: 40px;
+            padding-top: 70px;
+        }
+        .teacher p{
+            font-size: 25px;
+            padding-top: 10px;
+        }
+        .teacher .page1{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: green;
+             margin-top: 200px;
+        }
+        .teacher img{
+            margin-top: -250px;
+            padding: 25px;
+        }
+        .teacher .page2{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: purple;
+             margin-top: 200px;
+        }
+        .teacher .page3{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: yellow;
+             margin-top: 200px;
+        }
+        .teacher .page4{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: orangered;
+             margin-top: 200px;
+        }
+        .teacher .page5{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: blueviolet;
+             margin-top: 200px;
+        }
+        .teacher .page6{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: palevioletred;
+             margin-top: 200px;
+        }
+        .teacher .page7{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: blue;
+             margin-top: 200px;
+        }
+        .teacher .page8{
+             float: left;
+             margin: 10px;
+             padding-top: 150px;
+             margin-left: 50px;
+             background-color: palegreen;
+             margin-top: 200px;
+        }
+        .teacher h1{
+            font-size: 20px;
+        }
+        .teacher p{
+            font-size: 15px;
+            padding-bottom: 10px;
+        }
+
+        
+        .lable{
+            height: 300px;
+            width: 100%;
+            background-color: orange;
+            text-align: center;
+        }
+        .lable h4{
+            padding-top: 70px;
+        }
+        .lable a{
+            text-decoration: none;
+        }
+        .footer{
+            height: 500px;
+            width: 100%;
+            background-color: navy;
+        }
+     button:hover {
+    background-color: navy;
+}
+        .navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    margin-left: auto; 
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin-left: 5px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+.nav ul li a:hover{
+    color:orangered
+}
+
+.nav ul li a .fa-solid {
+    width: 20px;
+    height: 20px;
+    color: white;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    position:relative;
+}
+
+.nav ul li .fa-solid::before {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:white;
+    box-shadow: 0 0 10px gainsboro;
+    z-index: 1;
+    padding: 5px 0;
+    width: auto; 
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    
+padding:0px 0;
+    align-items: center;
+
+}
+
+ul .sub-menu li a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    
+}
+
+.nav button {
+    margin-left: 10px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orangered;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav button:hover {
+    background-color: black;
+}
+
+.nav ul li:hover .fa-solid::before {
+    content: "-";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.page{
+    display: flex;
+    text-align: center;
+    column-gap: 70px;
+    width: 500px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" height="100px" width="200px">
+            </div>
+            <div class="nav">
+                <ul class="links">
+                    <li>
+                        <a href="homeV1.html" style="margin-right: 50px;"> <i class="fa-solid fa-plus"></i>Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">HomeV1(preschool)</a></li>
+                            <li><a href="#">HomeV2(activities)</a></li>
+                        </ul>
+                    </li>
+                    <li><a style="margin-right:50px;" href="#">About</a></li>
+                    <li><a style="margin-right:50px;" href="#">Service</a></li>
+                    <li>
+                        <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                        <ul class="sub-menu">
+                            <div class="page">
+                                <div class="page1">
+                            <h3 style="margin:10px;">Pages</h3>
+                            <li><a style="margin: 5px;" href="#">About Us</a></li>
+                            <li><a style="margin: 5px;" href="#">Pricing</a></li>
+                            <li><a style="margin: 5px;" href="#">Teacher</a></li>
+                            <li><a style="margin: 5px;" href="#">Teacher Details</a></li>
+                            <li><a style="margin: 5px;" href="#">Service</a></li>
+                            <li><a style="margin: 5px;" href="#">Blog</a></li>
+                            <li><a style="margin: 5px;" href="#">Blog Details</a></li>
+                            <li><a style="margin: 5px;" href="#">Contact Us</a></li>
+                            <li><a style="margin: 5px;" href="#">FAQ's</a></li>
+                        </div>
+                        <div class="page2">
+                            <h3 style="margin: 10px;"> Utility Pages</h3>
+                            <li><a style="margin: 5px;" href="#">Style Guide</a></li>
+                            <li><a style="margin: 5px;" href="#">Password Protected</a></li>
+                            <li><a style="margin: 5px;" href="#">404 Not found</a></li>
+                            <li><a style="margin: 5px;" href="#">Licence</a></li>
+                            <li><a style="margin: 5px;" href="#">ChangeLog</a></li>
+                           
+                        </div>
+                        </div>
+                        </ul>
+                    </li>
+                    <li><a style="margin-right:50px;" href="#">Blog</a></li>
+                    <li><a style="margin-right:50px;" href="#">Pricing</a></li>
+                    <li><a style="margin-right:50px;" href="#">Contact</a></li>
+                    <li><a style="margin-right:25px;" href="#">Cart(0)</a></li>
+                    <button style="margin-right: 10px; cursor:pointer;">Get Started</button>
+                </ul>
+            </div>
+        </div>
+
+        <div class="header">
+            <h2>Teacher</h2>
+            <a href="#">Home</a>
+            <a style="color: red;" href="#">Teacher</a>
+        </div>
+
+        <div class="teacher">
+            <h3>We have lot’s Of <br>
+            Experience Teacher</h3>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci lectus eget nunc ullamcorper<br>
+         gravida iaculis iaculis scelerisque. Eu viverra nisl,</p>
+
+         <div class="page1">
+            <img src="images/teacher1.avif" height="250px" width="250px">
+            <h1>Lee E.Rousey</h1>
+            <p>Computer Teacher</p>
+         </div>
+         <div class="page2">
+            <img src="images/teacher2.avif" height="250px" width="250px">
+            <h1>Angela D.Wells</h1>
+            <p>Art Teacher</p>
+         </div>
+         <div class="page3">
+            <img src="images/teacher3.avif" height="250px" width="250px">
+            <h1>Fank A.Halbart</h1>
+            <p>Science Teacher</p>
+         </div>
+         <div class="page4">
+            <img src="images/teacher4.jpg" height="250px" width="250px">
+            <h1>Mary G.Wilson</h1>
+            <p>Math Teacher</p>
+         </div>
+         <div class="page5">
+            <img src="images/teacher5.jpg" height="250px" width="250px">
+            <h1>Ashley C.Capra</h1>
+            <p>Science Teacher</p>
+         </div>
+         <div class="page6">
+            <img src="images/teacher6.jpg" height="250px" width="250px">
+            <h1>Sara p.Torres</h1>
+            <p>Math Teacher</p>
+         </div>
+         <div class="page7">
+            <img src="images/teacher7.jpg" height="250px" width="250px">
+            <h1>Bonnie S.rangleS</h1>
+            <p>Computer Teacher</p>
+         </div>
+         <div class="page8">
+            <img src="images/teacher8.avif" height="250px" width="250px">
+            <h1>Clarita W.Butler</h1>
+            <p>Art Teacher</p>
+         </div>
+        </div>
+
+        <div class="lable">
+            <h4 style="font-size: 50px;"> Do You Want To Know Get Update?</h4>
+
+            <form action="Teacher.html" method="post" target="_self" name="f1">
+                <input type="text" style="height: 50px; text-align: center; margin-top: 50px; border-radius: 10px; border-color: gray; width: 500px;" name="fname" placeholder=" Enter your Email address">
+                <button style="height: 50px;cursor: pointer; width: 150px; border-radius: 10px; background-color: orangered; color: white;"><a href="#">Subscribe Now</a></button>
+
+            </form>
+        </div>
+
+        <div class="footer">
+            <img src="images/pencil.svg" alt="" height="500px" width="100%">
+        </div>
+
+       
+</div>
+</body>
+</html>
