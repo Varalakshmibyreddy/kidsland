@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style guide</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+        }
+        .navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    margin-left: auto; 
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin-left: 5px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+.nav ul li a:hover{
+    color:orangered
+}
+
+.nav ul li a .fa-solid {
+    width: 20px;
+    height: 20px;
+    color: black;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    position:relative;
+}
+
+.nav ul li .fa-solid::before {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 5px 0;
+    width: auto; 
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    
+padding:0px 0;
+    align-items: center;
+
+}
+
+ul .sub-menu li a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    
+}
+
+.nav button {
+    margin-left: 10px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orangered;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav button:hover {
+    background-color: black;
+}
+
+.nav ul li:hover .fa-solid::before {
+    content: "-";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.page{
+    display: flex;
+    text-align: center;
+    column-gap: 70px;
+    width: 500px;
+}
+.header{
+            height: 300px;
+            width: 100%;
+            background-color: greenyellow;
+            text-align: center;
+        }
+        .header h2{
+            font-size: 50px;
+            padding-top: 80px;
+        }
+        .header a{
+            text-decoration: none;
+            margin: 5px;
+            color: blue;
+        }
+        .note{
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            border: 1px black solid;
+            text-align: center;
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        .colors{
+            height: 600px;
+            width: 100%;
+            background-color: gainsboro;
+            margin-top:100px;
+        }
+        .colors .box{
+            float: left;
+        }
+        .header1{
+            height: 1400px;
+            width: 100%;
+            background-color: whitesmoke;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .header1 h1{
+            padding: 20px;
+        }
+        .header1 h4{
+            padding: 20px;
+        }
+        .header1 h2{
+            padding: 20px;
+        }
+        .header1 h3{
+            padding: 20px;
+        }
+        .footer{
+            height: 500px;
+            width: 100%;
+            background-color: navy;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.svg" height="100px" width="200px">
+            </div>
+        <div class="nav">
+            <ul class="links">
+                <li>
+                    <a href="homeV1.html" style="margin-right: 10px;">Home <i class="fa-solid fa-plus"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">HomeV1(preschool)</a></li>
+                        <li><a href="#">HomeV2(activities)</a></li>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">About</a></li>
+                <li><a style="margin-right:50px;" href="#">Service</a></li>
+                <li>
+                    <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                    <ul class="sub-menu">
+                        <div class="page">
+                            <div class="page1">
+                        <h3 style="margin:10px;">Pages</h3>
+                        <li><a style="margin: 5px;" href="#">About Us</a></li>
+                        <li><a style="margin: 5px;" href="#">Pricing</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Service</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Contact Us</a></li>
+                        <li><a style="margin: 5px;" href="#">FAQ's</a></li>
+                    </div>
+                    <div class="page2">
+                        <h3 style="margin: 10px;"> Utility Pages</h3>
+                        <li><a style="margin: 5px;" href="#">Style Guide</a></li>
+                        <li><a style="margin: 5px;" href="#">Password Protected</a></li>
+                        <li><a style="margin: 5px;" href="#">404 Not found</a></li>
+                        <li><a style="margin: 5px;" href="#">Licence</a></li>
+                        <li><a style="margin: 5px;" href="#">ChangeLog</a></li>
+                       
+                    </div>
+                    </div>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">Blog</a></li>
+                <li><a style="margin-right:50px;" href="#">Pricing</a></li>
+                <li><a style="margin-right:50px;" href="#">Contact</a></li>
+                <li><a style="margin-right:25px;" href="#">Cart(0)</a></li>
+                <button style="margin-right: 10px; cursor:pointer;">Get Started</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Style Guide</h2>
+        <a href="#">Home</a>
+        <a style="color: green;" href="#">Style Guide</a>
+    </div>
+
+    <div class="note">
+        Note:Change the colors through the swatches panel. This will change all locations where the color is used on the website.<br>
+         You can learn more about global swatches on the Webflow University..
+    </div>
+
+    <div class="section">
+        <h2 style="height: 50px; font-size: 30px; width: 100%; text-align: center; padding-top: 10px; border: 1px black solid; background-color: white; margin-top: 25px;">Colors</h2>
+    </div>
+
+    <div class="colors">
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #0C1A40;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#0C1A40</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #2E3C63;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#2E3C63</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #B5E93A;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#B5E93A</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #E5E5E5;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#E5E5E5</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #E9FFB5;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#E9FFB5</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #FF8877;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#FF8877</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #FFFFFF;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#FFFFFF</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #5BF4FF;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#5BF4FF</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #C8EFFC;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#C8EFFC</p>
+        </div>
+        <div style="padding: 50px;" class="box">
+            <h1 style="height: 150px; width: 150px; background-color: #FFF1F1;"></h1>
+            <p style="font-size: 20px; padding-left: 25px;">#0C1A40</p>
+        </div>
+        </div>
+
+        <h3 style="background-color: white; font-size: 30px; padding-top: 30px; height: 100px; width: 100%; border: 1px black solid; text-align: center;">Titles / Heading</h3>
+
+        <div class="header1">
+            <p>Heading 1 - Font size 4.25 rem / line height 4.75 rem</p>
+            <h1>Heading H1 - Aa Bb Cc Dd</h1>
+            <p>Heading 2 - Font size 3 rem / line height 3.5 rem</p>
+            <h1>Heading H2 - Aa Bb Cc Dd</h1>
+            <p>Heading 3 - Font size 2.5 rem / line height 3 rem</p>
+            <h1>Heading H3 - Aa Bb Cc Dd</h1>
+            <p>Heading 4 - Font size 2 rem / line height 2.5 rem</p>
+            <h1>Heading H4 - Aa Bb Cc Dd</h1>
+            <p>Heading 5 - Font size 1.5 rem / line height 2 rem</p>
+            <h1>Heading H5 - Aa Bb Cc Dd</h1>
+            <p>Heading 6 - Font size 1.25 rem / line height 1.75 rem</p>
+            <h1>Heading H6 - Aa Bb Cc Dd</h1>
+            
+            <h2>Paragraph Medium</h2>
+            <p>Paragraph Font - Font size 1.125 rem / line height 1.625rem</p>
+            <h3>Lorem ipsum dolor sit amet consectetur. Lacus iaculis placerat condimentum integer.<br>
+                 Amet odio pretium sit arcu turpis. Quam feugiat at ullamcorper fermentum arcu.</h3>
+            <h4>Paragraph Regular</h4>
+            <p>Paragraph Font - Font size 1.125rem / line height 1.625rem
+                Lorem ipsum dolor sit amet consectetur. Lacus iaculis placerat condimentum integer.<br>
+                 Amet odio pretium sit arcu turpis. Quam feugiat at ullamcorper fermentum arcu.</p>
+                <h4>Paragraph Small</h4>
+                <p>Paragraph Font - Font size 1rem / line height 1.5rem
+                    Lorem ipsum dolor sit amet consectetur. Lacus iaculis placerat condimentum integer.<br>
+                     Amet odio pretium sit arcu turpis. Quam feugiat at ullamcorper fermentum arcu.</p>
+                    <h4>Paragraph Tiny</h4>
+                    <p>Paragraph Font - Font size 0.875rem / line height 1.375rem
+                        Lorem ipsum dolor sit amet consectetur. Lacus iaculis placerat condimentum integer.<br>
+                     Amet odio pretium sit arcu turpis. Quam feugiat at ullamcorper fermentum arcu.</p>
+
+                     <h5 style="height: 100px; margin-top: 50px; font-size: 30px; text-align: center; padding-top: 30px; width: 100%; border: 1px black solid; background-color: ghostwhite;">Button</h5>
+
+                    <button style="height: 50px; color: white; cursor: pointer; width: 150px; margin: 10px; margin-top: 30px; border-radius: 10px; background-color: red;">Button Text</button>
+                    <button style="height: 50px; color: red; cursor: pointer; width: 150px; margin: 10px; margin-top: 30px; border-radius: 10px; background-color: white;">Read More</button>
+        </div>
+
+        <div class="footer">
+
+        </div>
+
+
+    </div>
+</body>
+</html>

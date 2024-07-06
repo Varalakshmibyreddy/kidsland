@@ -66,7 +66,7 @@
 .nav ul li a .fa-solid {
     width: 20px;
     height: 20px;
-    color: white;
+    color: black;
     margin-left: 5px;
     display: flex;
     justify-content: center;
@@ -395,6 +395,23 @@ ul .sub-menu li a{
         .thre2 .go2{
             margin-top:20px;
         }
+        .lable{
+            height: 300px;
+            width: 100%;
+            background-color: orange;
+            text-align: center;
+        }
+        .lable h4{
+            padding-top: 70px;
+        }
+        .lable a{
+            text-decoration: none;
+        }
+        .footer{
+            height: 500px;
+            width: 100%;
+            background-color: navy;
+        }
 
     </style>
 </head>
@@ -408,7 +425,7 @@ ul .sub-menu li a{
             <div class="nav">
                     <ul class="links">
                     <li>
-                        <a href="homeV1.html" style="margin-right: 50px;"> </i>Home</a>
+                        <a href="homeV1.html" style="margin-right: 10px;"> Home <i class="fa-solid fa-plus"></i></a>
                         <ul class="sub-menu">
                             <li><a href="#">HomeV1(preschool)</a></li>
                             <li><a href="#">HomeV2(activities)</a></li>
@@ -417,7 +434,7 @@ ul .sub-menu li a{
                     <li><a style="margin-right:50px;" href="#">About</a></li>
                     <li><a style="margin-right:50px;" href="#">Service</a></li>
                     <li>
-                        <a href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                        <a style="margin-right: 10px;" href="#">Pages <i class="fa-solid fa-plus"></i></a>
                         <ul class="sub-menu">
                             <div class="page">
                                 <div class="page1">
@@ -454,9 +471,9 @@ ul .sub-menu li a{
         </div>
 
         <div class="header">
-            <h2>Teacher</h2>
+            <h2>Services</h2>
             <a href="#">Home</a>
-            <a style="color: red;" href="Teacher.html">Teacher</a>
+            <a style="color: red;" href="service.html">service</a>
         </div>
 
         <div class="discover">
@@ -604,7 +621,56 @@ ul .sub-menu li a{
             </div>
 
             <div class="section1">
-               
+                <h2 style="font-size: 40px; padding-top: 70px;">What Parents Say</h2>
+                <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci lectus eget nunc<br>
+                     ullamcorper gravida iaculis iaculis scelerisque. Eu viverra nisl,</p>
+
+                     <Marquee>
+                        <div style="text-align: center; float: left; margin: 30px; border: 1px orangered solid; padding: 10px;" class="page1">
+                            <img src="images/pic a.svg" height="100px" width="100px">
+                            <h1>Frances S.</h1>
+                               <p style="font-size: 20px;">Mon of Girls</p> 
+                               <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                                 elit. Habitasse erat lacus sit volutpat, turpis<br>
+                                  morbi at facilisi. Leo viverra tristique consequat<br>
+                                   vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                    elementum cursus pretium sagittis elit sed.</p>
+                        </div>
+                        <div style="text-align: center; float: left; margin: 30px;  border: 1px purple solid; padding: 10px;" class="page2">
+                            <img src="images/pic b.svg" height="100px" width="100px">
+                            <h1>Frances S.</h1>
+                               <p style="font-size: 20px;">Mon of Girls</p> 
+                               <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                                 elit. Habitasse erat lacus sit volutpat, turpis<br>
+                                  morbi at facilisi. Leo viverra tristique consequat<br>
+                                   vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                    elementum cursus pretium sagittis elit sed.</p>
+                        </div>
+                        <div style="text-align: center; margin: 30px; padding: 10px;" class="page3">
+                            <img src="images/pic c.svg" height="100px" width="100px">
+                            <h1>Frances S.</h1>
+                               <p style="font-size: 20px;">Mon of Girls</p> 
+                               <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                                 elit. Habitasse erat lacus sit volutpat, turpis<br>
+                                  morbi at facilisi. Leo viverra tristique consequat<br>
+                                   vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                    elementum cursus pretium sagittis elit sed.</p>
+                        </div>
+                     </Marquee>
+            </div>
+
+            <div class="lable">
+                <h4 style="font-size: 50px;"> Do You Want To Know Get Update?</h4>
+    
+                <form action="Teacher.html" method="post" target="_self" name="f1">
+                    <input type="text" style="height: 50px; text-align: center; margin-top: 50px; border-radius: 10px; border-color: gray; width: 500px;" name="fname" placeholder=" Enter your Email address">
+                    <button style="height: 50px;cursor: pointer; width: 150px; border-radius: 10px; background-color: orangered; color: white;"><a href="#">Subscribe Now</a></button>
+    
+                </form>
+            </div>
+
+            <div style="height: 500px; width: 100%; background-color: navy;" class="footer">
+
             </div>
 
 </div>

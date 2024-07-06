@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA'Q</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+        }
+        .navbar {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    margin-left: auto; 
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    position: relative;
+    margin-left: 5px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    position: relative;
+}
+.nav ul li a:hover{
+    color:orangered
+}
+
+.nav ul li a .fa-solid {
+    width: 20px;
+    height: 20px;
+    color: black;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+    position:relative;
+}
+
+.nav ul li .fa-solid::before {
+    content: "+";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nav ul li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:white;
+    box-shadow: 0 0 10px gainsboro;
+    z-index: 1;
+    padding: 5px 0;
+    width: auto; 
+}
+
+.nav ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    
+padding:0px 0;
+    align-items: center;
+
+}
+
+ul .sub-menu li a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+    font-size: 18px;
+    
+}
+
+.nav button {
+    margin-left: 10px;
+    padding: 15px 40px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: orangered;
+    border: none;
+    border-radius: 25px;
+}
+
+.nav button:hover {
+    background-color: black;
+}
+
+.nav ul li:hover .fa-solid::before {
+    content: "-";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+.page{
+    display: flex;
+    text-align: center;
+    column-gap: 70px;
+    width: 500px;
+}
+.header{
+            height: 300px;
+            width: 100%;
+            background-color: gainsboro;
+            text-align: center;
+        }
+        .header h2{
+            font-size: 50px;
+            padding-top: 80px;
+        }
+        .header a{
+            text-decoration: none;
+            margin: 5px;
+            color: blue;
+        }
+        .section1 a{
+            text-decoration: none;
+        }
+        .section1{
+            height: 600px;
+            width: 100%;
+            text-align: center;
+            background-color: aquamarine;
+        }
+        .section1 h2{
+            padding-top: 80px;
+        }
+        .section1 .page1{
+            float: left;
+            height: 350px;
+            width: 400px;
+            margin: 10px;
+            padding-top: 70px;
+            border: 5px red solid;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+        .section2{
+            height: 850px;
+            width: 100%;
+            background-color: pink;
+            text-align: center;
+        }
+        .section2 h2{
+            padding-top: 70px;
+            font-size: 40px;
+        }
+        .section2 p{
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .section2 button{
+            height: 50px;
+            width: 150px;
+            cursor: pointer;
+            background-color: red;
+            border-radius: 10px;
+            margin: 15px;
+        }
+        .section2 button:hover{
+            background-color: navy;
+        }
+    .section3{
+    height: 600px;
+    width: 100%;
+    background-color: aqua;
+    text-align: center;
+}
+.lable{
+            height: 300px;
+            width: 100%;
+            background-color: orange;
+            text-align: center;
+        }
+        .lable h4{
+            padding-top: 70px;
+        }
+        .lable a{
+            text-decoration: none;
+        }
+        .footer{
+            height: 500px;
+            width: 100%;
+            background-color: navy;
+        }
+        .footer{
+            height: 500px;
+            width: 100%;
+            background-color: navy;
+        }
+        .section2 input{
+            height: 70px;
+            width: 600px;
+            margin-top: 40px;
+            text-align: center;
+            border-radius: 10px;
+            font-size: 30px;
+
+        }
+        .section2 i{
+            font-size: 30px;
+        }
+        .lable form input button:hover{
+            background: navy;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="images/logo.svg" height="100px" width="200px">
+        </div>
+        <div class="nav">
+            <ul class="links">
+                <li>
+                    <a href="homeV1.html" style="margin-right: 10px;">Home <i class="fa-solid fa-plus"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="#">HomeV1(preschool)</a></li>
+                        <li><a href="#">HomeV2(activities)</a></li>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">About</a></li>
+                <li><a style="margin-right:50px;" href="#">Service</a></li>
+                <li>
+                    <a style="margin-right: 10px;" href="#">Pages <i class="fa-solid fa-plus"></i></a>
+                    <ul class="sub-menu">
+                        <div class="page">
+                            <div class="page1">
+                        <h3 style="margin:10px;">Pages</h3>
+                        <li><a style="margin: 5px;" href="#">About Us</a></li>
+                        <li><a style="margin: 5px;" href="#">Pricing</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher</a></li>
+                        <li><a style="margin: 5px;" href="#">Teacher Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Service</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog</a></li>
+                        <li><a style="margin: 5px;" href="#">Blog Details</a></li>
+                        <li><a style="margin: 5px;" href="#">Contact Us</a></li>
+                        <li><a style="margin: 5px;" href="#">FAQ's</a></li>
+                    </div>
+                    <div class="page2">
+                        <h3 style="margin: 10px;"> Utility Pages</h3>
+                        <li><a style="margin: 5px;" href="#">Style Guide</a></li>
+                        <li><a style="margin: 5px;" href="#">Password Protected</a></li>
+                        <li><a style="margin: 5px;" href="#">404 Not found</a></li>
+                        <li><a style="margin: 5px;" href="#">Licence</a></li>
+                        <li><a style="margin: 5px;" href="#">ChangeLog</a></li>
+                       
+                    </div>
+                    </div>
+                    </ul>
+                </li>
+                <li><a style="margin-right:50px;" href="#">Blog</a></li>
+                <li><a style="margin-right:50px;" href="#">Pricing</a></li>
+                <li><a style="margin-right:50px;" href="#">Contact</a></li>
+                <li><a style="margin-right:25px;" href="#">Cart(0)</a></li>
+                <button style="margin-right: 10px; cursor:pointer;">Get Started</button>
+            </ul>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>FAQs</h2>
+        <a href="#">Home</a>
+        <a style="color: red;" href="#">FAQs</a>
+    </div>
+
+    <div class="section1">
+        <h2>We Are Ready To Help You<br>
+            Educational Programs</h2>
+        <p>Epsum dolor sit amet, consectetur adipiscing elit. Orci lectus eget nunc<br>
+             ullamcorper gravida iaculis iaculis scelerisque. Eu viverra nisl,</p>
+             <div class="page1">
+                <img src="images/support.svg">
+                <h1 style="margin: 5px;">Support And Info</h1>
+                <p style="margin: 5px;">Bibendum egestas ullamcorper nunc,<br>
+                    vel magna nisl, et tincidunt.</p>
+                <a href="#">Contact Us <i class="fa-solid fa-arrow-right"></i> </a>
+             </div>
+             <div class="page1">
+                <img src="images/news.svg">
+                <h1 style="margin: 5px;">Support And Info</h1>
+                <p style="margin: 5px;">Bibendum egestas ullamcorper nunc,<br>
+                    vel magna nisl, et tincidunt.</p>
+                <a href="#">Contact Us <i class="fa-solid fa-arrow-right"></i> </a>
+             </div>
+             <div class="page1">
+                <img src="images/events.svg">
+                <h1 style="margin: px;">Support And Info</h1>
+                <p style="margin: px;">Bibendum egestas ullamcorper nunc,<br>
+                    vel magna nisl, et tincidunt.</p>
+                <a href="#">Contact Us <i class="fa-solid fa-arrow-right"></i> </a>
+             </div>
+         </div>
+
+         <div class="section2">
+            <h2>The Answers to<br>
+                All Your Questions</h2>
+                <p>Emet, consectetur adipiscing elit. Viverra tristique morbi aenean at.<br>
+                     Amet iaculis urna, sagittis, maecenas massa, nisl. Nibh pretium proin sagittis nunc,<br>
+                     ultrices. Elit sem mattis cras morbi varius nulla non id purus.</p>
+                     <button>Contact Us</button>
+                     <form action="faq.html" method="post" target="_self" name="f1" >
+                        <input type="text" name="fname" placeholder="Parent-teacher communication?" ><i class="fa-solid fa-plus"></i>
+                        <input type="text" name="fname" placeholder="Submit Application in Online?" ><i class="fa-solid fa-plus"></i><br>
+                        <input type="text" name="fname" placeholder="School Readiness Program?" ><i class="fa-solid fa-plus"></i>
+                        <input type="text" name="fname" placeholder="School Readiness Program" ><i class="fa-solid fa-plus"></i><br>
+                        <input type="text" name="fname" placeholder="Age Appropriate Facilities?" ><i class="fa-solid fa-plus"></i>
+                        <input type="text" name="fname" placeholder="Age Appropriate Facilities?" ><i class="fa-solid fa-plus"></i><br>
+                        <input type="text" name="fname" placeholder="Government Child Care Subsidy?" ><i class="fa-solid fa-plus"></i>
+                        <input type="text" name="fname" placeholder="Government Child Care Subsidy?" ><i class="fa-solid fa-plus"></i><br>
+                     </form>
+         </div>
+
+         <div class="section3">
+            <h2 style="font-size: 40px; padding-top: 70px;">What Parents Say</h2>
+            <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Orci lectus eget nunc<br>
+                 ullamcorper gravida iaculis iaculis scelerisque. Eu viverra nisl,</p>
+
+                 <Marquee>
+                    <div style="text-align: center; float: left; margin: 30px; border: 1px orangered solid; padding: 10px;" class="page1">
+                        <img src="images/pic a.svg" height="100px" width="100px">
+                        <h1>Frances S.</h1>
+                           <p style="font-size: 20px;">Mon of Girls</p> 
+                           <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                             elit. Habitasse erat lacus sit volutpat, turpis<br>
+                              morbi at facilisi. Leo viverra tristique consequat<br>
+                               vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                elementum cursus pretium sagittis elit sed.</p>
+                    </div>
+                    <div style="text-align: center; float: left; margin: 30px;  border: 1px purple solid; padding: 10px;" class="page2">
+                        <img src="images/pic b.svg" height="100px" width="100px">
+                        <h1>Frances S.</h1>
+                           <p style="font-size: 20px;">Mon of Girls</p> 
+                           <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                             elit. Habitasse erat lacus sit volutpat, turpis<br>
+                              morbi at facilisi. Leo viverra tristique consequat<br>
+                               vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                elementum cursus pretium sagittis elit sed.</p>
+                    </div>
+                    <div style="text-align: center; margin: 30px; padding: 10px;" class="page3">
+                        <img src="images/pic c.svg" height="100px" width="100px">
+                        <h1>Frances S.</h1>
+                           <p style="font-size: 20px;">Mon of Girls</p> 
+                           <p>Rorem ipsum dolor sit amet, consectetur adipiscing<br>
+                             elit. Habitasse erat lacus sit volutpat, turpis<br>
+                              morbi at facilisi. Leo viverra tristique consequat<br>
+                               vitae nisl auctor.Pellentesque est interdum interdum<br>
+                                elementum cursus pretium sagittis elit sed.</p>
+                    </div>
+                 </Marquee>
+                  </div>
+
+                  <div class="lable">
+                    <h4 style="font-size: 50px;"> Do You Want To Know Get Update?</h4>
+        
+                    <form action="Teacher.html" method="post" target="_self" name="f1">
+                        <input type="text" style="height: 50px; text-align: center; margin-top: 50px; border-radius: 10px; border-color: gray; width: 500px;" name="fname" placeholder=" Enter your Email address">
+                        <button style="height: 50px;cursor: pointer; width: 150px; border-radius: 10px; background-color: orangered; color: white;"><a href="#">Subscribe Now</a></button>
+        
+                    </form>
+                </div>
+
+                <div class="footer">
+
+                </div>
+
+
+</div>
+</body>
+</html>
