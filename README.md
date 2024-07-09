@@ -34,7 +34,7 @@ Prerequisites Docker (optional, for deployment)
 ## Installation 
 
 Clone the repository 
-1. 
+1. https://github.com/Varalakshmibyreddy/kidsland.git
 2. cd SkillSpant 
 
 # Contributing 
